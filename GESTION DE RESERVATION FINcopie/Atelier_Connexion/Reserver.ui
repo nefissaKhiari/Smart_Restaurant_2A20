@@ -26,7 +26,7 @@
     <string notr="true"/>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -135,16 +135,18 @@
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -291,16 +293,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -355,16 +359,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -384,22 +390,19 @@ background:gray;
      <property name="styleSheet">
       <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
-
-
-
-
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
 }
 
-
-
-
-</string>
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
+}</string>
      </property>
      <property name="text">
       <string>AFFICHER UNE RESERVATION </string>
@@ -464,16 +467,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -574,16 +579,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -613,6 +620,21 @@ background:green;
 
 
 
+}
+QPushButton
+{
+  
+  border-radius: 10px;
+
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
      </property>
      <property name="text">
@@ -818,6 +840,21 @@ background:gray;
 
 
 
+}
+QPushButton
+{
+  
+  border-radius: 10px;
+
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -964,16 +1001,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -1028,16 +1067,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -1138,16 +1179,18 @@ background:gray;
       <property name="styleSheet">
        <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
       </property>
       <property name="text">
@@ -1177,16 +1220,18 @@ background:gray;
      <property name="styleSheet">
       <string notr="true">QPushButton
 {
-border:2px sold gray;
-border-radius:10px;
-padding: 0 8 px;
-background:gray;
+  
+  border-radius: 10px;
 
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
 
+}
 
-
-
-
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
 }</string>
      </property>
      <property name="text">
@@ -1259,6 +1304,23 @@ background:gray;
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  
+  border-radius: 10px;
+
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
+}</string>
+     </property>
      <property name="text">
       <string>Fr</string>
      </property>
@@ -1271,6 +1333,23 @@ background:gray;
        <width>31</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  
+  border-radius: 10px;
+
+background-color: qlineargradient(spread:pad, x1:0.613065, y1:0.511, x2:0.969, y2:0, stop:0.18593 rgba(2, 136, 148, 226), stop:0.959799 rgba(0, 0, 0, 161));
+	
+color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover,QPushButton:hover
+{
+    border: 4px solid QLinearGradient( x1: 2, y1: 2, x2: 2, y2: 3, stop: 0 #08E8DE , stop: 3 #d7801a);
+}</string>
      </property>
      <property name="text">
       <string>Ang</string>
