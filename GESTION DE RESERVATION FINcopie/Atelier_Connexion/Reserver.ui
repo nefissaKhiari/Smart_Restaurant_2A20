@@ -26,7 +26,7 @@
     <string notr="true"/>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -57,21 +57,21 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>40</y>
+        <x>10</x>
+        <y>60</y>
         <width>61</width>
         <height>41</height>
        </rect>
       </property>
       <property name="text">
-       <string>Identifiant</string>
+       <string>Identifiant R</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>70</y>
+        <x>10</x>
+        <y>90</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -83,8 +83,8 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>100</y>
+        <x>10</x>
+        <y>120</y>
         <width>61</width>
         <height>41</height>
        </rect>
@@ -97,7 +97,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>50</y>
+        <y>70</y>
         <width>351</width>
         <height>22</height>
        </rect>
@@ -107,7 +107,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>80</y>
+        <y>100</y>
         <width>351</width>
         <height>22</height>
        </rect>
@@ -117,7 +117,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>110</y>
+        <y>130</y>
         <width>351</width>
         <height>22</height>
        </rect>
@@ -132,6 +132,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>Ajouter</string>
       </property>
@@ -140,7 +155,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>140</y>
+        <y>160</y>
         <width>351</width>
         <height>22</height>
        </rect>
@@ -150,7 +165,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>170</y>
+        <y>190</y>
         <width>351</width>
         <height>22</height>
        </rect>
@@ -159,8 +174,8 @@
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>130</y>
+        <x>10</x>
+        <y>150</y>
         <width>41</width>
         <height>41</height>
        </rect>
@@ -172,8 +187,8 @@
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>160</y>
+        <x>10</x>
+        <y>180</y>
         <width>61</width>
         <height>41</height>
        </rect>
@@ -273,6 +288,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>Appliquer</string>
       </property>
@@ -322,6 +352,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>Supprimer</string>
       </property>
@@ -330,11 +375,31 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>442</x>
+       <x>432</x>
        <y>0</y>
-       <width>161</width>
+       <width>171</width>
        <height>28</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}
+
+
+
+
+</string>
      </property>
      <property name="text">
       <string>AFFICHER UNE RESERVATION </string>
@@ -395,6 +460,21 @@
         <width>81</width>
         <height>21</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
       </property>
       <property name="text">
        <string>OK</string>
@@ -491,6 +571,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>OK</string>
       </property>
@@ -505,10 +600,113 @@
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:green;
+
+
+
+
+
+
+}</string>
+     </property>
      <property name="text">
       <string>Stat</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>-27</y>
+       <width>1191</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="img">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-7</y>
+       <width>1161</width>
+       <height>711</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>570</y>
+       <width>451</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Narrow</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Gestion De Reservation</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="imagerestoo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>201</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>img</zorder>
+    <zorder>label_10</zorder>
+    <zorder>tableView</zorder>
+    <zorder>groupBox</zorder>
+    <zorder>groupBox_2</zorder>
+    <zorder>groupBox_3</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>groupBox_4</zorder>
+    <zorder>groupBox_9</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>label_11</zorder>
+    <zorder>imagerestoo</zorder>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
@@ -523,6 +721,9 @@
        <height>221</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 8pt &quot;Nirmala UI&quot;;</string>
+     </property>
      <property name="title">
       <string>AJOUTER UN CLIENT</string>
      </property>
@@ -531,7 +732,7 @@
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>141</width>
+        <width>61</width>
         <height>41</height>
        </rect>
       </property>
@@ -544,7 +745,7 @@
        <rect>
         <x>20</x>
         <y>70</y>
-        <width>141</width>
+        <width>51</width>
         <height>41</height>
        </rect>
       </property>
@@ -557,7 +758,7 @@
        <rect>
         <x>20</x>
         <y>100</y>
-        <width>141</width>
+        <width>61</width>
         <height>41</height>
        </rect>
       </property>
@@ -579,9 +780,9 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>80</y>
+        <y>81</y>
         <width>351</width>
-        <height>22</height>
+        <height>21</height>
        </rect>
       </property>
      </widget>
@@ -603,6 +804,21 @@
         <width>93</width>
         <height>28</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
       </property>
       <property name="text">
        <string>Ajouter</string>
@@ -745,6 +961,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>Appliquer</string>
       </property>
@@ -793,6 +1024,21 @@
         <width>93</width>
         <height>28</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
       </property>
       <property name="text">
        <string>Supprimer</string>
@@ -889,6 +1135,21 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+      </property>
       <property name="text">
        <string>OK</string>
       </property>
@@ -913,14 +1174,145 @@
        <height>28</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+border:2px sold gray;
+border-radius:10px;
+padding: 0 8 px;
+background:gray;
+
+
+
+
+
+
+}</string>
+     </property>
      <property name="text">
       <string>AFFICHER UN CLIENT</string>
      </property>
     </widget>
+    <widget class="QLabel" name="img2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-20</y>
+       <width>1121</width>
+       <height>721</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>570</y>
+       <width>451</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Narrow</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Gestion De Reservation</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="imageresto">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>201</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>224</x>
+       <y>350</y>
+       <width>31</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fr</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>350</y>
+       <width>31</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ang</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="langue">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>310</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string>Choisissez la langue</string>
+     </property>
+    </widget>
+    <zorder>img2</zorder>
+    <zorder>groupBox_5</zorder>
+    <zorder>groupBox_6</zorder>
+    <zorder>groupBox_7</zorder>
+    <zorder>groupBox_10</zorder>
+    <zorder>tableView_2</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>label_12</zorder>
+    <zorder>imageresto</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>langue</zorder>
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">
-     <string>statistiques</string>
+     <string>Statistiques</string>
     </attribute>
     <widget class="QFrame" name="horizontalFrame">
      <property name="geometry">

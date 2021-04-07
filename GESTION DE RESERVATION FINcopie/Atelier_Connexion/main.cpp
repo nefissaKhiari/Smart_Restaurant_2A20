@@ -2,10 +2,15 @@
 #include <QApplication>
 #include <QMessageBox>
 #include "connection.h"
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
+    w.setStyleSheet("background-image:url(:bkg.jpg");
+    w.show();
+
     Connection c;
     bool test=c.createconnect();
     if(test)
@@ -19,6 +24,7 @@ int main(int argc, char *argv[])
         QMessageBox::critical(nullptr, QObject::tr("database is not open"),
                     QObject::tr("connection failed.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
+
 
 
 

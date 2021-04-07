@@ -10,7 +10,8 @@ class RESERVATION
 public:
     RESERVATION();
 
-    RESERVATION(QString id ,QString nom ,QString prenom ,QString type ,QString date);
+    RESERVATION( QString id ,QString nom ,QString prenom ,QString type ,QString date);
+
     void setid(QString ide );
     void setnom(QString t);
     void setprenom(QString m);
@@ -25,8 +26,8 @@ public:
     bool ajouter_fact();
      QSqlQueryModel *afficher_fact();
       bool supprimer(QString id);
-      QSqlQueryModel * tri(QString);
-      bool  modifier(QString ident , QString nomt, QString prenom);
+      QSqlQueryModel * tri(QString nn);
+      bool  modifier(QString ident , QString nom, QString prenom);
 
 
 
@@ -34,7 +35,7 @@ public:
       QSqlQueryModel * chercher_matpar_nom(QString  nom);
        QSqlQueryModel * chercher_matpar_prenom(QString  prenom);
 private:
-    QString prenom, id , nom ,date,type;
+    QString id , nom ,prenom,type,date;
 
 };
 

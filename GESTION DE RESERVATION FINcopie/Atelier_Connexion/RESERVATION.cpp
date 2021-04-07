@@ -2,6 +2,7 @@
 
 RESERVATION::RESERVATION()
 {
+
     id="";
     nom="";
     prenom="";
@@ -12,6 +13,7 @@ RESERVATION::RESERVATION()
 
 RESERVATION::RESERVATION(QString id ,QString nom ,QString prenom ,QString type,  QString date   )
 {
+
     this->id=id;
     this->nom=nom ;
     this->prenom=prenom ;
@@ -67,18 +69,18 @@ bool RESERVATION::supprimer(QString ide)
     return  querry.exec();
 
 }
-QSqlQueryModel *RESERVATION::tri(QString n )
+QSqlQueryModel *RESERVATION::tri(QString nn )
 {
 
 
     {
         QSqlQueryModel * model= new QSqlQueryModel();
 
-        if(n=="IDR")
+        if(nn=="IDR")
             model->setQuery("SELECT * FROM RESERVATION ORDER BY IDR ");
-        else if(n=="NOMR")
+        else if(nn=="NOMR")
             model->setQuery("SELECT * FROM RESERVATION ORDER BY NOMR ");
-        else if (n=="PRENOM")
+        else if (nn=="PRENOM")
             model->setQuery("SELECT * FROM RESERVATION ORDER BY PRENOM");
 
         model->setHeaderData(0, Qt::Horizontal, QObject::tr("IDR"));
@@ -88,9 +90,9 @@ QSqlQueryModel *RESERVATION::tri(QString n )
             return model;
     }
 
-
-
 }
+
+
 
 bool RESERVATION::modifier(QString ident , QString nom, QString prenom)
 {

@@ -6,7 +6,9 @@
 QT       += core gui printsupport
 QT       += core gui sql
 QT       += core gui sql charts
+QT       +=multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 
 TARGET = Atelier_Connexion
 TEMPLATE = app

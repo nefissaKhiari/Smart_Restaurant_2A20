@@ -4,6 +4,9 @@
 #include <QDialog>
 #include<QLabel>
 #include "client.h"
+#include <QPropertyAnimation>
+#include <QMediaPlayer>
+
 
 
 namespace Ui {
@@ -33,7 +36,7 @@ private slots:
 
     void on_pushButton_8_clicked();
 
-    void on_imprimerbt_clicked();
+
 
 
     void on_Boutonajouter_2_clicked();
@@ -48,10 +51,18 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_10_clicked();
+
 private:
     Ui::Reserver *ui;
     RESERVATION tmpRESERVATION  ;
       Client tmpc;
+      QPropertyAnimation *animation ;
+           QPropertyAnimation *animation2 ;
+           QString lng="fr";
+           QMediaPlayer *click;
 
 };
 

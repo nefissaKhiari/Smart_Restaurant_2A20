@@ -68,6 +68,8 @@ return model ;
 
 
 
+
+
 bool Client::supprimer(QString idc)
 {
     QSqlQuery querry ;
