@@ -26,7 +26,7 @@
     <string notr="true"/>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -1298,8 +1298,8 @@ QPushButton:hover,QPushButton:hover
     <widget class="QPushButton" name="pushButton_9">
      <property name="geometry">
       <rect>
-       <x>224</x>
-       <y>350</y>
+       <x>210</x>
+       <y>280</y>
        <width>31</width>
        <height>23</height>
       </rect>
@@ -1328,8 +1328,8 @@ QPushButton:hover,QPushButton:hover
     <widget class="QPushButton" name="pushButton_10">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>350</y>
+       <x>240</x>
+       <y>280</y>
        <width>31</width>
        <height>23</height>
       </rect>
@@ -1358,8 +1358,8 @@ QPushButton:hover,QPushButton:hover
     <widget class="QLabel" name="langue">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>310</y>
+       <x>80</x>
+       <y>280</y>
        <width>141</width>
        <height>20</height>
       </rect>
@@ -1373,7 +1373,7 @@ QPushButton:hover,QPushButton:hover
       </font>
      </property>
      <property name="text">
-      <string>Choisissez la langue</string>
+      <string>Choisissez la langue:</string>
      </property>
     </widget>
     <zorder>img2</zorder>
