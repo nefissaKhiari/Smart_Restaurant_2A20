@@ -381,7 +381,7 @@ QPushButton:hover,QPushButton:hover
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>432</x>
+       <x>420</x>
        <y>0</y>
        <width>171</width>
        <height>28</height>
@@ -601,7 +601,7 @@ QPushButton:hover,QPushButton:hover
     <widget class="QPushButton" name="pushButton_6">
      <property name="geometry">
       <rect>
-       <x>200</x>
+       <x>170</x>
        <y>280</y>
        <width>161</width>
        <height>23</height>
@@ -1376,6 +1376,32 @@ QPushButton:hover,QPushButton:hover
       <string>Choisissez la langue:</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pdf_6">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>710</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pdf</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pdf">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>280</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PDF</string>
+     </property>
+    </widget>
     <zorder>img2</zorder>
     <zorder>groupBox_5</zorder>
     <zorder>groupBox_6</zorder>
@@ -1388,6 +1414,8 @@ QPushButton:hover,QPushButton:hover
     <zorder>pushButton_9</zorder>
     <zorder>pushButton_10</zorder>
     <zorder>langue</zorder>
+    <zorder>pdf_6</zorder>
+    <zorder>pdf</zorder>
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">

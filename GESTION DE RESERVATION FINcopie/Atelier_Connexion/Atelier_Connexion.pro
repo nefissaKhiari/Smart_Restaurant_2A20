@@ -7,6 +7,7 @@ QT       += core gui printsupport
 QT       += core gui sql
 QT       += core gui sql charts
 QT       +=multimedia
+QT       +=network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 
@@ -32,14 +33,16 @@ SOURCES += \
     client.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    tableprinter.cpp
 
 HEADERS += \
     RESERVATION.h \
     Reserver.h \
     client.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    tableprinter.h
 
 FORMS += \
         Reserver.ui \

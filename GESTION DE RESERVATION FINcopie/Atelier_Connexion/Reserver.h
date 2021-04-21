@@ -55,6 +55,8 @@ private slots:
 
     void on_pushButton_10_clicked();
 
+    void on_pdf_clicked();
+
 private:
     Ui::Reserver *ui;
     RESERVATION tmpRESERVATION  ;

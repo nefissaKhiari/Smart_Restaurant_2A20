@@ -21,8 +21,28 @@
 #include <cstdlib>
 #include <QRadioButton>
 #include<QLineEdit>
+#include <QtPrintSupport/QPrintDialog>
+#include <QDesktopServices>
+#include "tableprinter.h"
+#include <QPrinter>
+#include <QPrintPreviewDialog>
 
+class PrintBorder : public PagePrepare {
+public:
+    virtual void preparePage(QPainter *painter);
+    static int pageNumber;
+};
 
+int PrintBorder::pageNumber = 0;
+
+void PrintBorder::preparePage(QPainter *painter) { // print a border on each page
+    QRect rec = painter->viewport();
+    painter->setPen(QPen(QColor(0, 0, 0), 1));
+    painter->drawRect(rec);
+    painter->translate(10, painter->viewport().height() - 10);
+    painter->drawText(0, 0, QString("Page %1").arg(pageNumber));
+    pageNumber += 1;
+}
 
 
 
@@ -302,4 +322,57 @@ void Reserver::on_pushButton_10_clicked()
 
 
    ui->Boutonajouter_2->setStyleSheet("QPushButton {border:none;background-color:#000000;background-position: left center;background-repeat: no-repeat;border-radius: 5px;border:1px solid transparent;color:rgb(255, 255, 255);text-align: center; border-left:4px solid #000000;}QPushButton:hover {background-color:rgb(0, 0, 128);}QPushButton:pressed { border:2px solid rgb(0, 0, 128); }");
+}
+
+ void Reserver::on_pdf_clicked()
+{QString strStream;
+    QTextStream out(&strStream);
+    const int rowCount = ui->tableView_2->model()->rowCount();
+    const int columnCount =ui->tableView_2->model()->columnCount();
+
+    out <<  "<html>\n"
+            "<head>\n"
+            "<meta Content=\"Text/html; charset=Windows-1251\">\n"
+            <<  QString("<title>%1</title>\n").arg("eleve")
+            <<  "</head>\n"
+            "<body bgcolor=#F4B8B8 link=#5000A0>\n"
+               // "<img src='C:/Users/ksemt/Desktop/final/icon/logo.webp' width='20' height='20'>\n"
+                "<img src='C:/Users/Fakher/Desktop/GestionReservation/GESTION DE RESERVATION FINcopie/Atelier_Connexion/bkg.jpg' width='100' height='100'>\n"
+                "<h1>   Liste des clients </h1>"
+                 "<h1>  </h1>"
+
+                "<table border=1 cellspacing=0 cellpadding=2>\n";
+
+
+    // headers
+        out << "<thead><tr bgcolor=#f0f0f0>";
+        for (int column = 0; column < columnCount; column++)
+            if (!ui->tableView_2->isColumnHidden(column))
+                out << QString("<th>%1</th>").arg(ui->tableView_2->model()->headerData(column, Qt::Horizontal).toString());
+        out << "</tr></thead>\n";
+        // data table
+           for (int row = 0; row < rowCount; row++) {
+               out << "<tr>";
+               for (int column = 0; column < columnCount; column++) {
+                   if (!ui->tableView_2->isColumnHidden(column)) {
+                       QString data = ui->tableView_2->model()->data(ui->tableView_2->model()->index(row, column)).toString().simplified();
+                       out << QString("<td bkcolor=0>%1</td>").arg((!data.isEmpty()) ? data : QString("&nbsp;"));
+                   }
+               }
+               out << "</tr>\n";
+           }
+           out <<  "</table>\n"
+               "</body>\n"
+               "</html>\n";
+
+           QTextDocument *document = new QTextDocument();
+           document->setHtml(strStream);
+
+           QPrinter printer;
+
+           QPrintDialog *dialog = new QPrintDialog(&printer, NULL);
+           if (dialog->exec() == QDialog::Accepted) {
+               document->print(&printer);
+        }
+
 }
