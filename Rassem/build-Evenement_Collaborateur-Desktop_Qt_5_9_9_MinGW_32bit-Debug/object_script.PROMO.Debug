@@ -1,0 +1,13 @@
+INPUT(
+./debug\Evenement_Collaborateur.o
+./debug\affectation.o
+./debug\collaborateur.o
+./debug\evenement.o
+./debug\main.o
+./debug\connexion.o
+./debug\notification.o
+./debug\smtp.o
+./debug\qrc_images.o
+./debug\moc_Evenement_Collaborateur.o
+./debug\moc_smtp.o
+);

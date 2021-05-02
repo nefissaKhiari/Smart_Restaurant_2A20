@@ -1,0 +1,13 @@
+INPUT(
+./release\Evenement_Collaborateur.o
+./release\affectation.o
+./release\collaborateur.o
+./release\evenement.o
+./release\main.o
+./release\connexion.o
+./release\notification.o
+./release\smtp.o
+./release\qrc_images.o
+./release\moc_Evenement_Collaborateur.o
+./release\moc_smtp.o
+);
